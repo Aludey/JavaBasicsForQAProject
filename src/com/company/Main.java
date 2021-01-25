@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         TrainingCenter ourCenter = new TrainingCenter();
         ourCenter.students.add(new Student("Ivanov Ivan", new Date(2021-1900, Calendar.JANUARY,1,10,0), JAVA_DEVELOPER));
-        ourCenter.students.add(new Student("Sidorov Ivan", new Date(2021-1900, Calendar.JANUARY,15,10,0), AQE));
+        ourCenter.students.add(new Student("Sidorov Ivan", new Date(2021-1900, Calendar.JANUARY,21,10,0), AQE));
 
         System.out.println("Choose report mode: no parameter or parameter 0 - short report, otherwise - a full report.");
 
