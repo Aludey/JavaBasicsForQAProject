@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import static com.company.Course.*;
@@ -10,18 +9,18 @@ public enum CourseSet {
     AQE("AQE", Arrays.asList(TEST_DESIGN, PAGE_OBJECT, SELENIUM));
 
     private final String name;
-    private final ArrayList<Course> courseSet;
+    private final List<Course> courseSet;
 
     CourseSet(String name, List<Course> courseSet){
         this.name = name;
-        this.courseSet = (ArrayList<Course>) courseSet;
+        this.courseSet = courseSet;
     }
 
     public String getName() {
         return name;
     }
 
-    public ArrayList<Course> getCourseSet() {
+    public List<Course> getCourseSet() {
         return courseSet;
     }
 

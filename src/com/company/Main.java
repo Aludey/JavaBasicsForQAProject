@@ -3,8 +3,8 @@ package com.company;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
+
 import static  com.company.CourseSet.*;
 
 public class Main {
