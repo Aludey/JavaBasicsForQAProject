@@ -85,7 +85,6 @@ public class Evaluator {
         int differenceInHours = differenceInHours(differenceInTime);
 
         int holidaysHours = countHolidaysOnDateDifference(startDate, reportDate, duration) * 48;
-        int spentFullWorkDays = (differenceInHours - holidaysHours) / 24 * 8;
 
         int spentHoursLastDay;
         if(reportDate.getHours() < 10) {
@@ -100,7 +99,7 @@ public class Evaluator {
             }
         }
 
-        int remain = duration - spentFullWorkDays - spentHoursLastDay;
-        return remain;
+        int spentFullWorkDays = (differenceInHours - holidaysHours) / 24 * 8;
+        return duration - spentFullWorkDays - spentHoursLastDay;
     }
 }

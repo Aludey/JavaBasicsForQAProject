@@ -7,7 +7,6 @@ import java.util.*;
 public class TrainingCenter {
 
     private final ArrayList<Student> students;
-    public Rapporteur rapporteur = new Rapporteur();
 
     TrainingCenter(ArrayList<Student> students){
         this.students = students;
@@ -15,5 +14,10 @@ public class TrainingCenter {
 
     public ArrayList<Student> getStudentsList() {
         return students;
+    }
+
+    public void useRapporteur(String param, Date reportDate){
+        Rapporteur rapporteur = new Rapporteur();
+        rapporteur.report(param,this, reportDate);
     }
 }
